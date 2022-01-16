@@ -1,0 +1,32 @@
+let 
+    random := 
+        if rand(turtle, 1, 5) == 1 then
+            "creatures:turtle/big_sea_turtle.png"
+        elseif rand(turtle, 1, 5) == 2 then
+            "creatures:turtle/big_sea_turtle2.png"
+        elseif rand(turtle, 1, 5) == 3 then
+            "creatures:turtle/big_sea_turtle3.png"
+        elseif rand(turtle, 1, 5) == 4 then
+            "creatures:turtle/big_sea_turtle4.png"
+        else
+            "creatures:turtle/big_sea_turtle5.png"
+        end
+in
+    if turtle.hasname then
+        if turtle.name == "1" then
+            "creatures:turtle/big_sea_turtle.png"
+        elseif turtle.name == "2" then
+            "creatures:turtle/big_sea_turtle2.png"
+        elseif turtle.name == "3" then
+            "creatures:turtle/big_sea_turtle3.png"
+        elseif turtle.name == "4" then
+            "creatures:turtle/big_sea_turtle4.png"
+        elseif turtle.name == "5" then
+            "creatures:turtle/big_sea_turtle5.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end

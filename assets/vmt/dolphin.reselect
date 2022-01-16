@@ -1,0 +1,36 @@
+let
+    random :=
+        if rand(dolphin, 1, 6) == 1 then
+            "creatures:dolphin/dolphin.png"
+        elseif rand(dolphin, 1, 6) == 2 then
+            "creatures:dolphin/dolphin2.png"
+        elseif rand(dolphin, 1, 6) == 3 then
+            "creatures:dolphin/dolphin3.png"
+        elseif rand(dolphin, 1, 6) == 4 then
+            "creatures:dolphin/dolphin4.png"
+        elseif rand(dolphin, 1, 6) == 5 then
+            "creatures:dolphin/dolphin5.png"
+        else
+            "creatures:dolphin/dolphin6.png"
+        end
+in
+    if dolphin.hasname then
+        if dolphin.name == "1" then
+             "creatures:dolphin/dolphin.png"
+        elseif dolphin.name == "2" then
+            "creatures:dolphin/dolphin2.png"
+        elseif dolphin.name == "3" then
+            "creatures:dolphin/dolphin3.png"
+        elseif dolphin.name == "4" then
+            "creatures:dolphin/dolphin4.png"
+        elseif dolphin.name == "5" then
+            "creatures:dolphin/dolphin5.png"
+        elseif dolphin.name == "6" then
+            "creatures:dolphin/dolphin6.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end

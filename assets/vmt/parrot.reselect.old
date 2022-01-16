@@ -1,0 +1,2 @@
+if parrot.hasname then
+    if parrot.name.matches("Toco")
