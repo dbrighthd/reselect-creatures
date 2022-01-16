@@ -1,0 +1,7 @@
+if squid.biome == "minecraft:deep_ocean" then
+    "creatures:squid/squid2.png"
+elseif squid.hasname and squid.name == "2" then
+    "creatures:squid/squid2.png"
+else
+    default
+end

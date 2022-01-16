@@ -1,0 +1,54 @@
+let
+    random :=
+        if rand(chicken, 1, 10) == 1 then
+            "creatures:chicken/chicken.png"
+        elseif rand(chicken, 1, 10) == 2 then
+            "creatures:chicken/chicken2.png"
+        elseif rand(chicken, 1, 10) == 3 then
+            "creatures:chicken/chicken3.png"
+        elseif rand(chicken, 1, 10) == 4 then
+            "creatures:chicken/chicken4.png"
+        elseif rand(chicken, 1, 10) == 5 then
+            "creatures:chicken/chicken5.png"
+        elseif rand(chicken, 1, 10) == 6 then
+            "creatures:chicken/chicken6.png"
+        elseif rand(chicken, 1, 10) == 7 then
+            "creatures:chicken/chicken7.png"
+        elseif rand(chicken, 1, 10) == 8 then
+            "creatures:chicken/chicken8.png"
+        elseif rand(chicken, 1, 10) == 9 then
+            "creatures:chicken/chicken9.png"
+        else
+            "creatures:chicken/chicken11.png"
+        end
+in
+    if chicken.hasname then
+        if chicken.name == "1" then
+            "creatures:chicken/chicken.png"
+        elseif chicken.name == "2" then
+            "creatures:chicken/chicken2.png"
+        elseif chicken.name == "3" then
+            "creatures:chicken/chicken3.png"
+        elseif chicken.name == "4" then
+            "creatures:chicken/chicken4.png"
+        elseif chicken.name == "5" then
+            "creatures:chicken/chicken5.png"
+        elseif chicken.name == "6" then
+            "creatures:chicken/chicken6.png"
+        elseif chicken.name == "7" then
+            "creatures:chicken/chicken7.png"
+        elseif chicken.name == "8" then
+            "creatures:chicken/chicken8.png"
+        elseif chicken.name == "9" then
+            "creatures:chicken/chicken9.png"
+        elseif chicken.name == "Cluckshroom" then
+            "creatures:chicken/chicken10.png"
+        elseif chicken.name == "Fancy" then
+            "creatures:chicken/chicken11.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end

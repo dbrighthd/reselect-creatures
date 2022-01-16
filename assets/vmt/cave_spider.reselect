@@ -1,0 +1,13 @@
+if cave_spider.biome == "minecraft:desert" or cave_spider.biome == "minecraft:desert_hills" or cave_spider.biome == "minecraft:desert_lakes" or cave_spider.biome == "minecraft:badlands" or cave_spider.biome == "minecraft:badlands_plateau" or cave_spider.biome == "minecraft:modified_badlands_plateau" or cave_spider.biome == "minecraft:wooded_badlands_plateau" or cave_spider.biome == "minecraft:modified_wooded_badlands_plateau" or cave_spider.biome == "minecraft:eroded_badlands" then
+    "creatures:spider/cave_spider2.png"
+elseif cave_spider.hasname then
+    if cave_spider.name == "Scorpion" then
+        "creatures:spider/cave_spider2.png"
+    elseif cave_spider.name == "Glowing Scorpion" then
+        "creatures:spider/cave_spider3.png"
+    else
+        "creatures:spider/cave_spider.png"
+    end
+else
+    "creatures:spider/cave_spider.png"
+end

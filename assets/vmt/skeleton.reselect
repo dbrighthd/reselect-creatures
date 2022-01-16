@@ -1,0 +1,7 @@
+if skeleton.biome == "minecraft:soul_sand_valley" then
+    "creatures:skeleton/skeleton2.png"
+elseif skeleton.hasname and skeleton.name == "2" then
+    "creatures:skeleton/skeleton2.png"
+else
+    default
+end

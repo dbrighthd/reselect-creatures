@@ -1,0 +1,20 @@
+let
+    random :=
+        if rand(zombie, 1, 2) == 1 then
+            default
+        else
+            "creatures:zombie/zombie2.png"
+        end
+in
+    if zombie.hasname then
+        if zombie.name == "1" then
+            default
+        elseif zombie.name == "2" then
+            "creatures:zombie/zombie2.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end

@@ -1,0 +1,20 @@
+let
+    random :=
+        if rand(spider, 1, 2) == 1 then
+            "creatures:spider/spider.png"
+        else
+            "creatures:spider/spider2.png"
+        end
+in
+    if spider.hasname then
+        if spider.name == "1" then
+            "creatures:spider/spider.png"
+        elseif spider.name == "2" then
+            "creatures:spider/spider2.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end

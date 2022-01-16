@@ -1,0 +1,7 @@
+if blaze.biome == "minecraft:soul_sand_valley" then
+    "creatures:blaze/blaze2.png"
+elseif blaze.hasname and blaze.name == "2" then
+    "creatures:blaze/blaze2.png"
+else
+    default
+end
