@@ -1,0 +1,48 @@
+let
+    random :=
+        if rand(pig, 1, 9) == 1 then
+            default
+        elseif rand(pig, 1, 9) == 2 then
+            "creatures:pig/pig2.png"
+        elseif rand(pig, 1, 9) == 3 then
+            "creatures:pig/pig3.png"
+        elseif rand(pig, 1, 9) == 4 then
+            "creatures:pig/pig4.png"
+        elseif rand(pig, 1, 9) == 5 then
+            "creatures:pig/pig5.png"
+        elseif rand(pig, 1, 9) == 6 then
+            "creatures:pig/pig6.png"
+        elseif rand(pig, 1, 9) == 7 then
+            "creatures:pig/pig7.png"
+        elseif rand(pig, 1, 9) == 8 then
+            "creatures:pig/pig8.png"
+        else
+            "creatures:pig/pig9.png"
+        end
+in
+    if pig.hasname then
+        if pig.name == "1" then
+            default
+        elseif pig.name == "2" then
+            "creatures:pig/pig2.png"
+        elseif pig.name == "3" then
+            "creatures:pig/pig3.png"
+        elseif pig.name == "4" then
+            "creatures:pig/pig4.png"
+        elseif pig.name == "5" then
+            "creatures:pig/pig5.png"
+        elseif pig.name == "6" then
+            "creatures:pig/pig6.png"
+        elseif pig.name == "7" then
+            "creatures:pig/pig7.png"
+        elseif pig.name == "8" then
+            "creatures:pig/pig8.png"
+        elseif pig.name == "9" then
+            "creatures:pig/pig9.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end
